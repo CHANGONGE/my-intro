@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>사령관 최재원 | AI Business Consultant</title>
+    <style>
+        :root {
+            --main-blue: #002D58; /* 깊은 신뢰감의 네이비 */
+            --accent-gold: #D4AF37; /* 전문가의 권위 */
+            --point-blue: #007AFF; /* AI/디지털 느낌 */
+            --bg-gray: #F2F4F7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: var(--bg-gray);
+            color: #333;
+            padding: 10px;
+        }
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        /* 프로필 상단: AI 컨설턴트 정체성 */
+        .header {
+            background: var(--main-blue);
+            padding: 45px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+       .profile-img-container {
+            width: 240px;           /* 200px에서 240px로 추가 확대 */
+            height: 240px;          /* 가로 세로 동일하게 설정 */
+            margin: 0 auto 30px;    /* 사진이 커진 만큼 아래 여백도 30px로 조정 */
+            border-radius: 50%;
+            border: 6px solid var(--accent-gold); /* 사진 크기에 맞춰 테두리 두께 강화 */
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3); /* 더 묵직한 입체감 부여 */
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; /* 중앙 정렬 고정 */
+        }
+        .header h1 { font-size: 28px; margin-bottom: 8px; letter-spacing: 2px; }
+        .header .main-job { 
+            font-size: 18px; 
+            color: var(--accent-gold); 
+            font-weight: bold; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* 섹션 공통 스타일 */
+        .section { padding: 25px 20px; border-bottom: 1px solid #f0f0f0; }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--main-blue);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #eee;
+            margin-left: 10px;
+        }
+
+        /* 메인 업무: AI 컨설팅 */
+        .ai-consultant-box {
+            background: linear-gradient(to right, #f8fbff, #f0f7ff);
+            border-left: 5px solid var(--point-blue);
+            padding: 15px;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 10px;
+        }
+        .ai-consultant-box h3 { font-size: 16px; color: var(--point-blue); margin-bottom: 5px; }
+
+        /* 온라인 마케팅 강화 */
+        .marketing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .marketing-card {
+            background: #fafafa;
+            border: 1px solid #eee;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .marketing-card strong { font-size: 13px; color: #444; display: block; margin-bottom: 5px; }
+        .marketing-card span { font-size: 11px; color: #777; }
+
+        /* 오픈마켓 배지 */
+        .market-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .badge {
+            background: #333;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        /* 데이터 장인 경력 */
+        .history-list { list-style: none; }
+        .history-list li {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #555;
+            padding-left: 20px;
+            position: relative;
+        }
+        .history-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--point-blue);
+            font-weight: bold;
+        }
+
+        .footer {
+            padding: 25px;
+            text-align: center;
+            font-size: 11px;
+            color: #999;
+            background: #fdfdfd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="profile-img-container">
+            <img src="PROFILE.JPG" alt="최 재 원 " onerror="this.src='profile.jpg'">
+        </div>
+        <h1>최 재 원</h1>
+        <p class="main-job">AI Business Consultant</p>
+        <p style="font-size: 13px; opacity: 0.8; margin-top: 5px;">Data-Driven Intelligence & Strategy</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Main Expertise: AI Consulting</div>
+        <div class="ai-consultant-box">
+            <h3>AI 워크플로우 최적화</h3>
+            <p style="font-size: 13px; color: #666;">30년 데이터 모델링 노하우를 결합한 기업 맞춤형 AI 도입 전략 및 업무 자동화 솔루션 제시</p>
+        </div>
+        <div class="ai-consultant-box" style="border-left-color: var(--accent-gold);">
+            <h3>데이터 기반 의사결정 (BI)</h3>
+            <p style="font-size: 13px; color: #666;">QlikSense, SAP BW 등 엔터프라이즈 BI 도구를 활용한 인사이트 도출 및 시각화 구현</p>
+        </div>
+    </div>
+
+<div class="section marketing-section">
+        <div class="section-title">Online Marketing & Selling</div>
+        <p style="font-size: 13.5px; color: #444; margin-bottom: 15px; font-weight: 500;">
+            <b>"국내 6대 마켓 입점 위탁판매 & 데이터 퍼포먼스 마케팅 실현" </b>
+        </p>
+        
+        <div class="marketing-grid">
+            <div class="marketing-card">
+                <strong>SEO 최적화</strong>
+                <span>데이터 기반 키워드 분석</span>
+            </div>
+            <div class="marketing-card">
+                <strong>광고 데이터 분석</strong>
+                <span>ROAS 중심 효율 극대화</span>
+            </div>
+        </div>
+
+        <div class="market-badges">
+            <span class="badge" style="background:#E31C19;">쿠팡</span>
+            <span class="badge" style="background:#2DB400;">스마트스토어</span>
+            <span class="badge" style="background:#FF5000;">11번가</span>
+            <span class="badge" style="background:#0094FF;">G마켓</span>
+            <span class="badge" style="background:#0094FF;">옥션</span>
+            <span class="badge" style="background:#EF2624;">롯데ON</span>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">Professional Background</div>
+        <ul class="history-list">
+            <li><strong>현대모비스:</strong> 전동화 실적 분석 KPI 시스템 구축 </li>
+            <li><strong>삼성전자:</strong> G-ERP 재무/원가 BI 시스템 고도화 컨설팅</li>
+            <li><strong>국도화학:</strong> 전산실장 역임 (ERP 및 IT 인프라 아키텍처 설계)</li>
+            <li><strong>특기:</strong> 데이터 마이그레이션 및 DW/Mart 설계 최적화 & 시각화</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        "30년의 데이터 집요함이 AI 비즈니스의 정답을 찾습니다."<br>
+        © 2026 Choi Jae Won. All Rights Reserved.
+    </div>
+</div>
+
+</body>
+</html>
