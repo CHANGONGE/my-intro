@@ -146,6 +146,44 @@
             color: #999;
             background: #fdfdfd;
         }
+
+/* 연락처 버튼 섹션 스타일 */
+.contact-section {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    background: #fff;
+}
+.contact-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+.contact-btn:active {
+    transform: scale(0.95);
+}
+.btn-email {
+    background-color: #243D61; /* 이미지의 진청색 */
+    color: white;
+}
+.btn-phone {
+    background-color: #F0F4F9; /* 연한 배경색 */
+    color: #243D61;
+    border: 1px solid #D0D7DE;
+}
+.btn-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
     </style>
 </head>
 <body>
@@ -206,6 +244,15 @@
             <li><strong>국도화학:</strong> 전산실장 역임 (ERP 및 IT 인프라 아키텍처 설계)</li>
             <li><strong>특기:</strong> 데이터 마이그레이션 및 DW/Mart 설계 최적화 & 시각화</li>
         </ul>
+    </div>
+
+    <div class="contact-section">
+        <a href="mailto:skydot.cjw@gmail.com" class="contact-btn btn-email">
+            <span class="btn-icon">✉</span> 이메일 보내기
+        </a>
+        <a href="tel:010-8703-1222" class="contact-btn btn-phone">
+            <span class="btn-icon">📞</span> 전화 걸기
+        </a>
     </div>
 
     <div class="footer">
